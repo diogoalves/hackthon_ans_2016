@@ -1,0 +1,53 @@
+
+0. Instala Ubuntu 64bits, Java, Node...
+
+1. Instala Android Studio (Custom marcando tudo)
+
+2. Instala Android SDK Versão 23 (Mashmallow)
+O React-native gera código para essa versão.
+Marca os pacotes
+- Google APIs
+- Intel x86 Atom System Image
+- Intel x86 Atom_64 System Image
+- Google APIs Intel x86 Atom_64 System Image
+- Build tools para 23.0.1 (exemplo do react-native) e 23.0.3 (ignite)
+
+3. Configura os paths no .bashrc
+export ANDROID_HOME=~/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+aproveita e configura também do Android Studio
+(sai e entra pra carregar os paths)
+
+4. Instala o react-native e ignite via npm
+sudo npm install -g react-native-cli
+sudo npm install -g react-native-ignite
+se der erro de permissão no posinstall
+sudo chmod 777 -R /usr/lib/node_modules
+sudo chmod -R 777 ~/.npm/
+sudo npm install -g react-native-ignite
+depois verifica ser react-native e ignite estão no path
+
+
+5. Rodar os exemplos do react-native + simulador android studio
+react-native init AwesomeProject
+cd AwesomeProject
+em uma aba roda: react-native start
+na outra: react-native run-android
+para corrigir o problem de synthax na conversão do babel
+https://stackoverflow.com/questions/41058495/syntaxerror-strict-mode-does-not-allow-function-declarations-in-a-lexically-nes/41059867#41059867
+https://github.com/facebook/react-native/issues/11389
+
+open node_modules\react-native\Libraries\Core\InitializeCore.js line 112
+change function handleError(e, isFatal) to var handleError = function(e, isFatal)
+then do npm start -- --reset-cache
+
+6. roda exemplo do ignite
+sudo npm install -g yo
+sudo npm install -g react-native-ignite
+ignite new MyApplication
+cd MyApplication
+duas abas uma rodando react-native start
+outra rodando react-native run-android
+
+
