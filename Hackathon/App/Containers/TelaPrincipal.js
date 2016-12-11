@@ -24,7 +24,7 @@ class TelaPrincipal extends React.Component {
         <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
-            <Image source={Images.clearLogo} style={styles.logo} />
+            <Image source={Images.logo} style={styles.logo} />
           </View>
 
           <View style={styles.section} >

@@ -39,7 +39,7 @@ class NavigationRouter extends Component {
           <Scene key='drawerChildrenWrapper' navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
 
 
-            <Scene initial key='telaPrincipal' component={TelaPrincipal} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
+            <Scene initial key='telaPrincipal' component={TelaPrincipal} title='Hackhaton ANS 2016' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='prazosProcedimentos' component={PrazosProcedimentos} title='Prazos de Procedimentos' />
             <Scene key='buscaPrazosProcedimentos' component={BuscaPrazosProcedimentos} title='Busca Prazos de Procedimentos' navBar={CustomNavBar} />
             <Scene key='prazoDetalhado' component={PrazoDetalhado} title='Prazo Detalhado'  />

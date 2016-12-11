@@ -66,3 +66,39 @@ que está dentro de Android sdk tools lib64 ...
 
 8. Nesse notebook é impossível ficar rodando no simulador
 no final roda no device mesmo
+
+
+
+9. Para fazer build de release
+gera certificado para autoassinar (já coloquei na pasta android/app)
+
+edita ~/.gradle/gradle.properties
+MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
+MYAPP_RELEASE_KEY_ALIAS=my-key-alias
+MYAPP_RELEASE_STORE_PASSWORD=*****
+MYAPP_RELEASE_KEY_PASSWORD=*****
+
+atualiza android/app/build.gradle
+  signingConfigs {
+        release {
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+cd android && ./gradlew assembleRelease
+isso gera um apk em android/app/build/outputs/apk/app-release.apk
+
+para subir com react-native
+apaga o app em desenvolvimento
+
+react-native run-android --variant=release
