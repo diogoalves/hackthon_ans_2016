@@ -14,7 +14,7 @@ export default {
     justifyContent: 'space-between'
   },
   title: {
-    flex: 1,
+    flex: 0,
     textAlign: 'center',
     color: Colors.snow,
     marginTop: Metrics.doubleBaseMargin,

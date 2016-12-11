@@ -27,6 +27,10 @@ export default class PresentationScreen extends React.Component {
           </View>
 
           <RoundedButton onPress={NavigationActions.componentExamples}>
+            Tela Hackathon
+          </RoundedButton>
+
+          <RoundedButton onPress={NavigationActions.componentExamples}>
             Component Examples Screen
           </RoundedButton>
 

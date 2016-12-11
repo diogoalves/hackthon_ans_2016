@@ -4,18 +4,10 @@ import { createReducer, createActions } from 'reduxsauce'
 import Immutable from 'seamless-immutable'
 import { filter } from 'ramda'
 import { startsWith } from 'ramdasauce'
+import procedimentos from './procedimentos'
 
-const LIST_DATA = ['sausage', 'blubber', 'pencil', 'cloud', 'moon', 'water', 'computer', 'school',
-  'network', 'hammer', 'walking', 'violently', 'mediocre', 'literature', 'chair', 'two', 'window',
-  'cords', 'musical', 'zebra', 'xylophone', 'penguin', 'home', 'dog', 'final', 'ink', 'teacher', 'fun',
-  'website', 'banana', 'uncle', 'softly', 'mega', 'ten', 'awesome', 'attatch', 'blue', 'internet', 'bottle',
-  'tight', 'zone', 'tomato', 'prison', 'hydro', 'cleaning', 'telivision', 'send', 'frog', 'cup', 'book',
-  'zooming', 'falling', 'evily', 'gamer', 'lid', 'juice', 'moniter', 'captain', 'bonding', 'loudly', 'thudding',
-  'guitar', 'shaving', 'hair', 'soccer', 'water', 'racket', 'table', 'late', 'media', 'desktop', 'flipper',
-  'club', 'flying', 'smooth', 'monster', 'purple', 'guardian', 'bold', 'hyperlink', 'presentation', 'world', 'national',
-  'comment', 'element', 'magic', 'lion', 'sand', 'crust', 'toast', 'jam', 'hunter', 'forest', 'foraging',
-  'silently', 'tawesomated', 'joshing', 'pong', 'RANDOM', 'WORD'
-]
+const LIST_DATA = procedimentos;
+
 
 /* ------------- Types and Action Creators ------------- */
 
@@ -38,7 +30,8 @@ export const INITIAL_STATE = Immutable({
 /* ------------- Reducers ------------- */
 
 export const performSearch = (state: Object, { searchTerm }: Object) => {
-  const results = filter(startsWith(searchTerm), LIST_DATA)
+  const results = LIST_DATA.filter((e)=>case_accent_fold(e.nome).contains(case_accent_fold(searchTerm)));
+  //const results = filter(startsWith(searchTerm), LIST_DATA)
   return state.merge({ searching: true, searchTerm, results })
 }
 
@@ -50,3 +43,21 @@ export const reducer = createReducer(INITIAL_STATE, {
   [Types.SEARCH]: performSearch,
   [Types.CANCEL_SEARCH]: cancelSearch
 })
+
+
+
+
+function case_accent_fold (s) {
+  if (!s) { return ''; }
+  return (
+    s
+    .toLowerCase()
+    .replace(/[àáâãäå]/g,"a")
+    .replace(/[èéêẽë]/g,"e")
+    .replace(/[ìíîĩï]/g,"i")
+    .replace(/[òóôõö]/g,"o")
+    .replace(/[ùúûũü]/g,"u")
+    .replace(/[ç]/g,"u")
+  );
+  return ret;
+};

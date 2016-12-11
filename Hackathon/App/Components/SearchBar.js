@@ -11,7 +11,7 @@ export default class SearchBar extends React.Component {
   static propTypes = {
     onSearch: React.PropTypes.func.isRequired,
     onCancel: React.PropTypes.func.isRequired,
-    searchTerm: React.PropTypes.string
+    searchTerm: React.PropTypes.string,
   }
 
   render () {
@@ -23,7 +23,7 @@ export default class SearchBar extends React.Component {
         <TextInput
           ref='searchText'
           autoFocus
-          placeholder={I18n.t('search')}
+          placeholder='Digite nome do procedimento'
           placeholderTextColor={Colors.snow}
           underlineColorAndroid='transparent'
           style={styles.searchInput}
@@ -36,7 +36,7 @@ export default class SearchBar extends React.Component {
           selectionColor={Colors.snow}
         />
         <TouchableOpacity onPress={onCancel} style={styles.cancelButton}>
-          <Text style={styles.buttonLabel}>{I18n.t('cancel')}</Text>
+          <Text style={styles.buttonLabel}>Cancelar</Text>
         </TouchableOpacity>
       </Animatable.View>
     )

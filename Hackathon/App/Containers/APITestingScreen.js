@@ -14,7 +14,7 @@ import styles from './Styles/APITestingScreenStyle'
 
 // API buttons here:
 const endpoints = [
-  { label: 'Get City (Boise)', endpoint: 'getCity', args: ['Boise'] },
+  { label: 'Get City (Recife)', endpoint: 'getCity', args: ['Recife'] },
   { label: 'Get City (Toronto)', endpoint: 'getCity', args: ['Toronto'] }
 ]
 

@@ -45,9 +45,13 @@ open node_modules\react-native\Libraries\Core\InitializeCore.js line 112
 change function handleError(e, isFatal) to var handleError = function(e, isFatal)
 then do npm start -- --reset-cache
 
-6. Configura watchmen e aumenta as instancias possíveis, multipliquei tudo por 4
+6. Instala e Configura watchmen e aumenta as instancias possíveis, multipliquei tudo por 4
+/proc/sys/fs/inotify/max_user_instances para 512
+/proc/sys/fs/inotify/max_user_watches para 32768
+/proc/sys/fs/inotify/max_queued_events
 
-7. roda código do hackathon 
+
+7. roda código do hackathon
 sudo npm install -g yo
  cd work/hackans2016/Hackathon/
  três abas
@@ -56,7 +60,7 @@ sudo npm install -g yo
  3.  react-native run-android
 
 se o emulador nnão rodar
-renomeia 
+renomeia
 mv libstdc++.so.6 bak-libstdc++.so.6
 que está dentro de Android sdk tools lib64 ...
 
