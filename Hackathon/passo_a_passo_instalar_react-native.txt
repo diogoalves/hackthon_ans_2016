@@ -19,7 +19,10 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 aproveita e configura também do Android Studio
 (sai e entra pra carregar os paths)
 
-4. Instala o react-native e ignite via npm
+4. Instala KVM para aceleração do emulador android
+sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+
+5. Instala o react-native e ignite via npm
 sudo npm install -g react-native-cli
 sudo npm install -g react-native-ignite
 se der erro de permissão no posinstall
@@ -42,12 +45,20 @@ open node_modules\react-native\Libraries\Core\InitializeCore.js line 112
 change function handleError(e, isFatal) to var handleError = function(e, isFatal)
 then do npm start -- --reset-cache
 
-6. roda exemplo do ignite
+6. Configura watchmen e aumenta as instancias possíveis, multipliquei tudo por 4
+
+7. roda código do hackathon 
 sudo npm install -g yo
-sudo npm install -g react-native-ignite
-ignite new MyApplication
-cd MyApplication
-duas abas uma rodando react-native start
-outra rodando react-native run-android
+ cd work/hackans2016/Hackathon/
+ três abas
+ 1. chama o emulador (só consegui fazer via Android Studio)
+ 2. react-native start
+ 3.  react-native run-android
 
+se o emulador nnão rodar
+renomeia 
+mv libstdc++.so.6 bak-libstdc++.so.6
+que está dentro de Android sdk tools lib64 ...
 
+8. Nesse notebook é impossível ficar rodando no simulador
+no final roda no device mesmo
