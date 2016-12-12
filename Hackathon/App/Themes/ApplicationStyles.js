@@ -34,13 +34,13 @@ const ApplicationStyles = {
       borderBottomWidth: 1
     },
     sectionText: {
-      color: Colors.snow,
+      color: Colors.azulAns,
       marginVertical: Metrics.smallMargin,
       textAlign: 'center',
       fontWeight: 'bold'
     },
     subtitle: {
-      color: Colors.snow,
+      color: Colors.azulAns,
       padding: Metrics.smallMargin,
       marginBottom: Metrics.smallMargin,
       marginHorizontal: Metrics.smallMargin
@@ -52,7 +52,7 @@ const ApplicationStyles = {
   },
   darkLabel: {
     fontFamily: Fonts.type.bold,
-    color: Colors.snow
+    color: Colors.azulAns
   },
   groupContainer: {
     margin: Metrics.smallMargin,

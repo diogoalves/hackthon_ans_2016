@@ -48,11 +48,19 @@ class DrawerContent extends Component {
     NavigationActions.deviceInfo()
   }
 
+  handlePlanosProcedimentos = () => {
+    this.toggleDrawer();
+    NavigationActions.buscaPrazosProcedimentos();
+  }
+
   render () {
     return (
       <ScrollView style={styles.container}>
         <Image source={Images.logo} style={styles.logo} />
-        <DrawerButton text='Component Examples' onPress={this.handlePressComponents} />
+        <DrawerButton text='Prazos de Procedimentos' onPress={this.handlePlanosProcedimentos} />
+        <DrawerButton text='Plano de Saúde para seu Hospital' onPress={this.handlePressComponents} />
+        <DrawerButton text='Reputação Planos de Saúde' onPress={this.handlePressComponents} />
+        <DrawerButton text='Sobre o aplicativo' onPress={this.handlePressComponents} />
         <DrawerButton text='Usage Examples' onPress={this.handlePressUsage} />
         <DrawerButton text='API Testing' onPress={this.handlePressAPI} />
         <DrawerButton text='Themes' onPress={this.handlePressTheme} />
@@ -60,7 +68,6 @@ class DrawerContent extends Component {
       </ScrollView>
     )
   }
-
 }
 
 DrawerContent.contextTypes = {

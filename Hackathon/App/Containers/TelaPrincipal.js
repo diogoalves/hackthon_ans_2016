@@ -21,7 +21,7 @@ class TelaPrincipal extends React.Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+{/*        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' /> */}
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
             <Image source={Images.logo} style={styles.logo} />

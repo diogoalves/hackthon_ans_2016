@@ -11,6 +11,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import Animatable from 'react-native-animatable'
 import { Actions as NavigationActions } from 'react-native-router-flux'
 
+import RoundedButton from '../Components/RoundedButton';
 
 import { Images } from '../Themes';
 
@@ -24,11 +25,11 @@ import I18n from 'react-native-i18n'
 
 const LegendaTipoPlano = ({tipo}) => {
   switch(tipo) {
-    case 'OD': return <Text style={styles.sectionText} >Plano Odontológico</Text>;
-    case 'AMB': return <Text style={styles.sectionText} >Plano Ambulatorial</Text>;
-    case 'HCO': return <Text style={styles.sectionText} >Plano Hospitalar Com Obstetrícia</Text>;
-    case 'HSO': return <Text style={styles.sectionText} >Plano Hospitalar Sem Obstetrícia</Text>;
-    case 'REF': return <Text style={styles.sectionText} >Plano Referência</Text>;
+    case 'OD': return <Text style={styles.sectionText} >Odontológico</Text>;
+    case 'AMB': return <Text style={styles.sectionText} >Ambulatorial</Text>;
+    case 'HCO': return <Text style={styles.sectionText} >Hospitalar Com Obstetrícia</Text>;
+    case 'HSO': return <Text style={styles.sectionText} >Hospitalar Sem Obstetrícia</Text>;
+    case 'REF': return <Text style={styles.sectionText} >Referência</Text>;
     default: return null;
   }
 }
@@ -39,7 +40,7 @@ class PrazoDetalhado extends React.Component {
     const { nome, valor: { tipoPlanos, prazoEletivo, ehPac, possuiDut, prazoHospitalizado, prazoEmergencia } } = this.props;
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+{/*        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' /> */}
 
         <ScrollView style={styles.container}>
           <View style={styles.section} >
@@ -50,6 +51,11 @@ class PrazoDetalhado extends React.Component {
           <Text style={styles.sectionText} >
             {prazoEletivo}
           </Text>
+          <View style={styles.componentLabelContainer}>
+            {(tipoPlanos.length === 1) ?
+              <Text style={styles.componentLabel}>Coberto pelo Plano</Text>
+            : <Text style={styles.componentLabel}>Coberto pelos Planos</Text>}
+          </View>
           {tipoPlanos.map( e => <LegendaTipoPlano key={e} tipo={e} />)}
           {ehPac && <Text style={styles.sectionText}>Procedimento é de Maior Complexidade.</Text>}
           {possuiDut ? <Text style={styles.sectionText}>{possuiDut}</Text> : null }
@@ -59,6 +65,9 @@ class PrazoDetalhado extends React.Component {
           <Text style={styles.sectionText} >
             Se emergência: {prazoEmergencia}
           </Text>
+          <RoundedButton onPress={NavigationActions.pop}>
+            Voltar
+          </RoundedButton>
         </ScrollView>
       </View>
     )
