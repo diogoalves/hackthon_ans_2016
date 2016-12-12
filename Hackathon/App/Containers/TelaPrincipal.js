@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { ScrollView, Text, View, Image } from 'react-native';
-import { Images } from '../Themes';
+import { Images, Fonts } from '../Themes';
 import { connect } from 'react-redux';
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
@@ -28,8 +28,8 @@ class TelaPrincipal extends React.Component {
           </View>
 
           <View style={styles.section} >
-            <Text style={styles.sectionText} >
-              Busque aqui informaçõe sobre prazos de antendimento dos
+            <Text style={[styles.sectionText, Fonts.style.h6]} >
+              Busque aqui informações sobre prazos de antendimento dos
               procedimentos e cobertura do planos de saúde.
             </Text>
           </View>
