@@ -1311,3 +1311,10 @@ export const idss = [
 {reg:'419460', nome:'PINTI SAÚDE PLANOS ODONTOLÓGICOS LTDA', modalidade:'Odontologia de Grupo', benificiarios:'39 ', idss:'0,4296'},
 {reg:'419486', nome:'PLADISA PLANOS DE SAÚDE LTDA', modalidade:'Medicina de Grupo', benificiarios:'8.928', idss:'0,6155'},
 ];
+
+const reclameAqui = [
+{reg: '413267', link:'http://www.reclameaqui.com.br/indices/6070/prevent-senior/'},
+{reg: '413402', link:'http://www.reclameaqui.com.br/indices/102812/unilife-o-plano-de-saude-da-sua-vida/'},
+{reg: '402966', link:'http://www.reclameaqui.com.br/indices/66073/bio-saude-servicos-medicos/'},
+{reg: '342408', link: 'http://www.reclameaqui.com.br/indices/24774/pame-plano-de-assistencia-medica/'},
+];

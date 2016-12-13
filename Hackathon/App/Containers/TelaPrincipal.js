@@ -38,12 +38,12 @@ class TelaPrincipal extends React.Component {
             Prazos de Procedimentos
           </RoundedButton>
 
-          <RoundedButton onPress={NavigationActions.componentExamples}>
-            Plano de Saúde para seu Hospital
+          <RoundedButton onPress={NavigationActions.buscaQualidade}>
+            Reputação Operadoras
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.componentExamples}>
-            Reputação Planos de Saúde
+            Plano de Saúde para seu Hospital
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.componentExamples}>

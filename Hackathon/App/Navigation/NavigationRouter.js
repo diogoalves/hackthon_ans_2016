@@ -25,6 +25,7 @@ import TelaPrincipal from '../Containers/TelaPrincipal'
 import PrazosProcedimentos from '../Containers/PrazosProcedimentos'
 
 import BuscaPrazos from '../Containers/BuscaPrazos'
+import BuscaQualidade from '../Containers/BuscaQualidade'
 
 import PrazoDetalhado from '../Containers/PrazoDetalhado'
 
@@ -45,6 +46,7 @@ class NavigationRouter extends Component {
             <Scene key='prazosProcedimentos' component={PrazosProcedimentos} title='Prazos de Procedimentos' />
             <Scene key='buscaPrazosProcedimentos' component={BuscaPrazos} title='Procedimentos' />
             <Scene key='prazoDetalhado' component={PrazoDetalhado} title='Prazo Detalhado'  />
+            <Scene key='buscaQualidade' component={BuscaQualidade} title='Operadoras' />
 
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
