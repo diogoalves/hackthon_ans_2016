@@ -26,7 +26,6 @@ import PrazosProcedimentos from '../Containers/PrazosProcedimentos'
 
 import BuscaPrazos from '../Containers/BuscaPrazos'
 
-import BuscaPrazosProcedimentos from '../Containers/BuscaPrazosProcedimentos'
 import PrazoDetalhado from '../Containers/PrazoDetalhado'
 
 
