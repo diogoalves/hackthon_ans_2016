@@ -8,5 +8,12 @@ export default StyleSheet.create({
     flex: 1,
     marginTop: Metrics.navBarHeight,
     backgroundColor: Colors.background
-  }
+  },  ...ApplicationStyles.screen,
+  componentLabelContainer: {
+    ...ApplicationStyles.darkLabelContainer
+  },
+  componentLabel: {
+    ...ApplicationStyles.darkLabel
+  },
+
 })

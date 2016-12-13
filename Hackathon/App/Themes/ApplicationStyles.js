@@ -39,6 +39,13 @@ const ApplicationStyles = {
       textAlign: 'center',
       fontWeight: 'bold'
     },
+    sectionTextLeft: {
+      color: Colors.azulAns,
+      marginVertical: Metrics.smallMargin,
+      marginLeft: 5,
+      textAlign: 'left',
+      fontWeight: 'bold'
+    },
     subtitle: {
       color: Colors.azulAns,
       padding: Metrics.smallMargin,

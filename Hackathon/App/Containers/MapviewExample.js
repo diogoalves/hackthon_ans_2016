@@ -31,8 +31,10 @@ class MapviewExample extends React.Component {
     * a latitude and longitude as well as any additional information you wish to display.
     *************************************************************/
     const locations = [
-      { title: 'Location A', latitude: 37.78825, longitude: -122.4324 },
-      { title: 'Location B', latitude: 37.75825, longitude: -122.4624 }
+      { title: 'HOSPITAL ISRAELITA SOC.BENEF.ISRAELITA DO RJ', latitude: -22.91555, longitude: -43.22425 },
+      { title: 'HOSPITAL SANTA CRUZ - SOC.PORT.DE BENEF.DE NITEROI', latitude: -22.89454, longitude: -43.1175 },
+      { title: 'OBRA PORTUGUESA DE ASSISTENCIA', latitude: -22.91287, longitude: -43.19123 },
+      { title: 'PRONTOBABY LTDA - CLINICA INFANTIL DE URGENCIA', latitude: -22.92105, longitude: -43.23246 },
     ]
     /* ***********************************************************
     * STEP 2

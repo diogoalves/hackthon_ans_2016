@@ -11,6 +11,8 @@ import RoundedButton from '../Components/RoundedButton';
 // Styles
 import styles from './Styles/TelaPrincipalStyle'
 
+import { planos } from './planos';
+
 class TelaPrincipal extends React.Component {
 
   // constructor (props) {
@@ -46,15 +48,15 @@ class TelaPrincipal extends React.Component {
             Faça uma Reclamação
           </RoundedButton>
 
-          <RoundedButton onPress={NavigationActions.componentExamples}>
+          <RoundedButton onPress={() => NavigationActions.buscaPlanos({planos, filtros: {}})}>
             Planos de Saúde
           </RoundedButton>
 
-          <RoundedButton onPress={NavigationActions.componentExamples}>
+          <RoundedButton onPress={() => NavigationActions.escolheHospital({planos, filtros: {}})}>
             Planos de Saúde para seu Hospital
           </RoundedButton>
 
-          <RoundedButton onPress={NavigationActions.componentExamples}>
+          <RoundedButton onPress={() => NavigationActions.escolheLimiteValor({planos, filtros: {}})}>
             Planos de Saúde por Valor Máximo e Faixa Etária
           </RoundedButton>
 

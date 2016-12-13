@@ -36,6 +36,12 @@ import ReclamarAns from '../Containers/ReclamarAns';
 import ReclamarReclameAqui from '../Containers/ReclamarReclameAqui';
 import ReclamarOuvidorias from '../Containers/ReclamarOuvidorias';
 
+import BuscaPlanos from '../Containers/BuscaPlanos';
+import DetalhaPlano from '../Containers/DetalhaPlano';
+import EscolheFaixaEtaria from '../Containers/EscolheFaixaEtaria';
+import EscolheHospital from '../Containers/EscolheHospital';
+import EscolheLimiteValor from '../Containers/EscolheLimiteValor';
+
 
 /* **************************
 * Documentation: https://github.com/aksonov/react-native-router-flux
@@ -62,6 +68,12 @@ class NavigationRouter extends Component {
             <Scene key='reclamarReclameAqui' component={ReclamarReclameAqui} title='Reclame AQUI'  />
             <Scene key='reclamarOuvidorias' component={ReclamarOuvidorias} title='Ouvidorias'  />
 
+            <Scene key='buscaPlanos' component={BuscaPlanos} title='Planos'  />
+            <Scene key='detalhaPlano' component={DetalhaPlano} title='Plano Detalhado'  />
+            <Scene key='escolheFaixaEtaria' component={EscolheFaixaEtaria} title='Faixa Etária'  />
+            <Scene key='escolheHospital' component={EscolheHospital} title='Hospitial'  />
+            <Scene key='escolheLimiteValor' component={EscolheLimiteValor} title='Limite Valor'  />
+
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />
             <Scene key='usageExamples' component={UsageExamplesScreen} title='Usage' rightTitle='Example' onRight={() => window.alert('Example Pressed')} />
@@ -70,7 +82,7 @@ class NavigationRouter extends Component {
             <Scene key='listviewGridExample' component={ListviewGridExample} title='Listview Grid' />
             <Scene key='listviewSectionsExample' component={ListviewSectionsExample} title='Listview Sections' />
             <Scene key='listviewSearchingExample' component={ListviewSearchingExample} title='Listview Searching' navBar={CustomNavBar} />
-            <Scene key='mapviewExample' component={MapviewExample} title='Mapview Example' />
+            <Scene key='mapviewExample' component={MapviewExample} title='Rede Credenciada' />
             <Scene key='apiTesting' component={APITestingScreen} title='API Testing' />
             <Scene key='theme' component={ThemeScreen} title='Theme' />
 
