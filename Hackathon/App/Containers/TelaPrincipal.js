@@ -13,6 +13,9 @@ import styles from './Styles/TelaPrincipalStyle'
 
 import { planos } from './planos';
 
+
+
+
 class TelaPrincipal extends React.Component {
 
   // constructor (props) {
