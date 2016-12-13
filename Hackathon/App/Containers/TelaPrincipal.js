@@ -42,12 +42,12 @@ class TelaPrincipal extends React.Component {
             Reputação Operadoras
           </RoundedButton>
 
-          <RoundedButton onPress={NavigationActions.componentExamples}>
-            Plano de Saúde para seu Hospital
+          <RoundedButton onPress={NavigationActions.fazerReclamacao}>
+            Faça uma Reclamação
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.componentExamples}>
-            Faça uma Reclamação
+            Plano de Saúde para seu Hospital
           </RoundedButton>
 
           <View style={styles.centered}>
