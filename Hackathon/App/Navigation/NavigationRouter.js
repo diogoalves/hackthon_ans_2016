@@ -22,6 +22,7 @@ import ThemeScreen from '../Containers/ThemeScreen'
 import DeviceInfoScreen from '../Containers/DeviceInfoScreen'
 
 import TelaPrincipal from '../Containers/TelaPrincipal'
+import TelaWeb from '../Containers/TelaWeb'
 import PrazosProcedimentos from '../Containers/PrazosProcedimentos'
 
 import BuscaPrazos from '../Containers/BuscaPrazos'
@@ -49,6 +50,7 @@ class NavigationRouter extends Component {
             <Scene key='prazoDetalhado' component={PrazoDetalhado} title='Prazo Detalhado'  />
             <Scene key='buscaQualidade' component={BuscaQualidade} title='Operadoras' />
             <Scene key='qualidadeDetalhada' component={QualidadeDetalhada} title='Reputação Operadora'  />
+            <Scene key='telaWeb' component={TelaWeb} title='Reclame AQUI'  />
 
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />

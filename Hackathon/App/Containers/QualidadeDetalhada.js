@@ -15,7 +15,7 @@ import RoundedButton from '../Components/RoundedButton';
 
 import { Images } from '../Themes';
 
-import { buscaIndices, acreditacao } from '../Redux/indicesQualidade'
+import { buscaIndices, acreditacao, reclameAqui } from '../Redux/indicesQualidade'
 
 
 // Styles
@@ -68,8 +68,9 @@ class QualidadeDetalhada extends React.Component {
             </Text>
           }
 
-          {buscaIndices(reg).some((e) => e.tipo == "Site Reclame Aqui") ?
-            <RoundedButton onPress={() => this.setModalVisible(true)}>
+
+          { buscaIndices(reg).some((e) => e.tipo == "Site Reclame Aqui") ?
+            <RoundedButton onPress={geraFuncaoLink(reg)}>
               Ver Reclame Aqui
             </RoundedButton>
            : null }
@@ -95,3 +96,9 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(QualidadeDetalhada)
+
+
+const geraFuncaoLink = (reg) => {
+  const link = reclameAqui.filter((e) => e.reg == reg)[0].link;
+  return () => NavigationActions.telaWeb(link);
+}
