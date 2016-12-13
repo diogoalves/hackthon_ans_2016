@@ -335,8 +335,7 @@ export const acreditacao = [
 { nome:'SAMP ESPÍRITO SANTO ASSISTÊNCIA MÉDICA LTDA. (34203-3)', valor:'2'},
 ];
 
-
-var idss = [
+export const idss = [
 {reg:'000477', nome:'YASUDA MARÍTIMA SAÚDE SEGUROS S/A', modalidade:'Seguradora Especializada em Saúde', benificiarios:'172.743', idss:'0,7162'},
 {reg:'000515', nome:'ALLIANZ SAÚDE S/A', modalidade:'Seguradora Especializada em Saúde', benificiarios:'108.004', idss:'0,7652'},
 {reg:'000582', nome:'PORTO SEGURO - SEGURO SAÚDE S/A', modalidade:'Seguradora Especializada em Saúde', benificiarios:'729.181', idss:'0,896'},
