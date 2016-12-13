@@ -29,7 +29,7 @@ class TelaPrincipal extends React.Component {
 
           <View style={styles.section} >
             <Text style={[styles.sectionText, Fonts.style.h6]} >
-              Busque aqui informações sobre prazos de antendimento dos
+              Busque aqui informações sobre prazos de atendimento dos
               procedimentos e cobertura do planos de saúde.
             </Text>
           </View>
@@ -47,8 +47,18 @@ class TelaPrincipal extends React.Component {
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.componentExamples}>
-            Plano de Saúde para seu Hospital
+            Planos de Saúde
           </RoundedButton>
+
+          <RoundedButton onPress={NavigationActions.componentExamples}>
+            Planos de Saúde para seu Hospital
+          </RoundedButton>
+
+          <RoundedButton onPress={NavigationActions.componentExamples}>
+            Planos de Saúde por Valor Máximo e Faixa Etária
+          </RoundedButton>
+
+
 
           <View style={styles.centered}>
             <Text style={styles.subtitle}> ️ </Text>
