@@ -39,6 +39,11 @@ class TelaPrincipal extends React.Component {
             </Text>
           </View>
 
+
+          <RoundedButton onPress={NavigationActions.meuPlano}>
+            Meu Plano
+          </RoundedButton>
+
           <RoundedButton onPress={NavigationActions.buscaPrazosProcedimentos}>
             Prazos de Procedimentos
           </RoundedButton>
@@ -58,12 +63,6 @@ class TelaPrincipal extends React.Component {
           <RoundedButton onPress={() => NavigationActions.escolheHospital({planos, filtros: {}})}>
             Planos de Saúde para seu Hospital
           </RoundedButton>
-
-          <RoundedButton onPress={() => NavigationActions.escolheLimiteValor({planos, filtros: {}})}>
-            Planos de Saúde por Valor Máximo e Faixa Etária
-          </RoundedButton>
-
-
 
           <View style={styles.centered}>
             <Text style={styles.subtitle}> ️ </Text>

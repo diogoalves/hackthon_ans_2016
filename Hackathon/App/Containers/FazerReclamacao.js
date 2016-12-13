@@ -30,7 +30,7 @@ class FazerReclamacao extends React.Component {
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.reclamarReclameAqui}>
-            o Reclama AQUI
+            para o Reclame AQUI
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.reclamarReclameAqui}>

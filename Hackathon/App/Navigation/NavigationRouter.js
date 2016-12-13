@@ -42,6 +42,7 @@ import EscolheFaixaEtaria from '../Containers/EscolheFaixaEtaria';
 import EscolheHospital from '../Containers/EscolheHospital';
 import EscolheLimiteValor from '../Containers/EscolheLimiteValor';
 
+import MeuPlano from '../Containers/MeuPlano';
 
 /* **************************
 * Documentation: https://github.com/aksonov/react-native-router-flux
@@ -73,6 +74,9 @@ class NavigationRouter extends Component {
             <Scene key='escolheFaixaEtaria' component={EscolheFaixaEtaria} title='Faixa Etária'  />
             <Scene key='escolheHospital' component={EscolheHospital} title='Hospitial'  />
             <Scene key='escolheLimiteValor' component={EscolheLimiteValor} title='Limite Valor'  />
+
+            <Scene key='meuPlano' component={MeuPlano} title='Meu Plano'  />
+
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />
