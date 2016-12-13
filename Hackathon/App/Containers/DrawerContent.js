@@ -48,23 +48,52 @@ class DrawerContent extends Component {
     NavigationActions.deviceInfo()
   }
 
-  handlePlanosProcedimentos = () => {
+  handlePrazosProcedimento = () => {
     this.toggleDrawer();
     NavigationActions.buscaPrazosProcedimentos();
   }
+
+  handleReputacao = () => {
+    this.toggleDrawer();
+    NavigationActions.buscaQualidade();
+  }
+
+  handleReclamacao = () => {
+    this.toggleDrawer();
+    NavigationActions.fazerReclamacao();
+  }
+
+  handleP = () => {
+    this.toggleDrawer();
+    NavigationActions.buscaPlanos();
+  }
+
+  handlePH = () => {
+    this.toggleDrawer();
+    NavigationActions.escolheHospital();
+  }
+
+  handlePHV = () => {
+    this.toggleDrawer();
+    NavigationActions.escolheLimiteValor();
+  }
+
 
   render () {
     return (
       <ScrollView style={styles.container}>
         <Image source={Images.logo} style={styles.logo} />
-        <DrawerButton text='Prazos de Procedimentos' onPress={this.handlePlanosProcedimentos} />
-        <DrawerButton text='Plano de Saúde para seu Hospital' onPress={this.handlePressComponents} />
-        <DrawerButton text='Reputação Planos de Saúde' onPress={this.handlePressComponents} />
-        <DrawerButton text='Sobre o aplicativo' onPress={this.handlePressComponents} />
+        <DrawerButton text='Prazos de Procedimentos' onPress={this.handlePrazosProcedimento} />
+        <DrawerButton text='Reputação Operadoras' onPress={this.handleReputacao} />
+        <DrawerButton text='Faça uma Reclamação' onPress={this.handleReclamacao} />
+        <DrawerButton text='Planos de Saúde' onPress={this.handleP} />
+        <DrawerButton text='Planos de Saúde para seu Hospital' onPress={this.handlePH} />
+        <DrawerButton text='Planos de Saúde por Valor Máximo e Faixa Etária' onPress={this.handlePHV} />
+{/*     <DrawerButton text='Sobre o aplicativo' onPress={this.handlePressComponents} />
         <DrawerButton text='Usage Examples' onPress={this.handlePressUsage} />
         <DrawerButton text='API Testing' onPress={this.handlePressAPI} />
         <DrawerButton text='Themes' onPress={this.handlePressTheme} />
-        <DrawerButton text='Device Info' onPress={this.handlePressDevice} />
+        <DrawerButton text='Device Info' onPress={this.handlePressDevice} /> */}
       </ScrollView>
     )
   }
