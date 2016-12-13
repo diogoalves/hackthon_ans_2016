@@ -42,7 +42,7 @@ class BuscaQualidade extends React.Component {
 
   _renderRow (row) {
     return (
-      <FullButton onPress={() =>  NavigationActions.prazoDetalhado(row)} text={row.nome} highlight='AE' />
+      <FullButton onPress={() =>  NavigationActions.qualidadeDetalhada(row)} text={row.nome} highlight='AE' />
     )
   }
 
@@ -107,6 +107,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(BuscaQualidade)
 
 const _renderRow2 = (searchTerm) => (row) => {
   return (
-    <FullButton onPress={() =>  NavigationActions.prazoDetalhado(row)} text={row.nome} highlight={searchTerm} />
+    <FullButton onPress={() =>  NavigationActions.qualidadeDetalhada(row)} text={row.nome} highlight={searchTerm} />
   )
 }

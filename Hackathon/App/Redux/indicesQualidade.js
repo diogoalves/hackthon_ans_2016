@@ -322,17 +322,17 @@ export const pfa = [
 ];
 
 export const acreditacao = [
-{ nome:'UNIMED VITÓRIA COOPERATIVA DE TRABALHO MÉDICO (35739-1)', valor:'1'},
-{ nome:'UNIMED PORTO ALEGRE - COOPERATIVA MÉDICA (35250-1)', valor:'1'},
-{ nome:'UNIMED NORDESTE RS SOCIEDADE COOPERATIVA DE SERVIÇOS MÉDICOS LTDA. (32557-1)', valor:'1'},
-{ nome:'BRADESCO SAÚDE S.A. (00571-1)', valor:'1'},
-{ nome:'UNIMED VALE DO SINOS COOPERATIVA DE ASSISTÊNCIA À SAÚDE LTDA (35641-7)', valor:'1'},
-{ nome:'UNIMED ERECHIM COOPERATIVA DE SERVIÇOS DE SAÚDE LTDA (35702-2)', valor:'1'},
-{ nome:'UNIMED GOIÂNIA - COOPERATIVA DE TRABALHO MÉDICO (38287-6)', valor:'1'},
-{ nome:'UNIMED COOPERATIVA DE SERVIÇOS DE SAÚDE VALES DO TAQUARI E RIO PARDO (30639-8)', valor:'1'},
-{ nome:'UNIMED BELO HORIZONTE – COOPERATIVA DE TRABALHO MÉDICO (34388-9)', valor:'1'},
-{ nome:'UNIMED DO ESTADO DO PARANÁ - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS (31272-0)', valor:'1'},
-{ nome:'SAMP ESPÍRITO SANTO ASSISTÊNCIA MÉDICA LTDA. (34203-3)', valor:'2'},
+{ nome:'UNIMED VITÓRIA COOPERATIVA DE TRABALHO MÉDICO (357391)', valor:'1'},
+{ nome:'UNIMED PORTO ALEGRE - COOPERATIVA MÉDICA (352501)', valor:'1'},
+{ nome:'UNIMED NORDESTE RS SOCIEDADE COOPERATIVA DE SERVIÇOS MÉDICOS LTDA. (325571)', valor:'1'},
+{ nome:'BRADESCO SAÚDE S.A. (005711)', valor:'1'},
+{ nome:'UNIMED VALE DO SINOS COOPERATIVA DE ASSISTÊNCIA À SAÚDE LTDA (356417)', valor:'1'},
+{ nome:'UNIMED ERECHIM COOPERATIVA DE SERVIÇOS DE SAÚDE LTDA (357022)', valor:'1'},
+{ nome:'UNIMED GOIÂNIA - COOPERATIVA DE TRABALHO MÉDICO (382876)', valor:'1'},
+{ nome:'UNIMED COOPERATIVA DE SERVIÇOS DE SAÚDE VALES DO TAQUARI E RIO PARDO (306398)', valor:'1'},
+{ nome:'UNIMED BELO HORIZONTE – COOPERATIVA DE TRABALHO MÉDICO (343889)', valor:'1'},
+{ nome:'UNIMED DO ESTADO DO PARANÁ - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS (312720)', valor:'1'},
+{ nome:'SAMP ESPÍRITO SANTO ASSISTÊNCIA MÉDICA LTDA. (342033)', valor:'2'},
 ];
 
 export const idss = [
@@ -1312,9 +1312,22 @@ export const idss = [
 {reg:'419486', nome:'PLADISA PLANOS DE SAÚDE LTDA', modalidade:'Medicina de Grupo', benificiarios:'8.928', idss:'0,6155'},
 ];
 
-const reclameAqui = [
+export const reclameAqui = [
 {reg: '413267', link:'http://www.reclameaqui.com.br/indices/6070/prevent-senior/'},
 {reg: '413402', link:'http://www.reclameaqui.com.br/indices/102812/unilife-o-plano-de-saude-da-sua-vida/'},
 {reg: '402966', link:'http://www.reclameaqui.com.br/indices/66073/bio-saude-servicos-medicos/'},
 {reg: '342408', link: 'http://www.reclameaqui.com.br/indices/24774/pame-plano-de-assistencia-medica/'},
 ];
+
+export const buscaIndices = (registroAns) => {
+  const _igr = igr.filter((e) => e.nome.contains(registroAns))[0];
+  const _iap = iap.filter((e) => e.nome.contains(registroAns))[0];
+  const _pfa = pfa.filter((e) => e.nome.contains(registroAns))[0];
+  const _reclameAqui = reclameAqui.filter((e) => e.reg.contains(registroAns))[0];
+  const ret = [];
+  _igr && ret.push({tipo: "Índice Geral de Reclamações ANS", valor: _igr});
+  _iap && ret.push({tipo: "Índice de Abertura de Processo Administrativo ANS ", valor: _iap});
+  _pfa && ret.push({tipo: "Percentual de Finalização Assistencial ANS", valor: _pfa});
+  _reclameAqui && ret.push({tipo: "Site Reclame Aqui", valor: _reclameAqui});
+  return ret;
+};

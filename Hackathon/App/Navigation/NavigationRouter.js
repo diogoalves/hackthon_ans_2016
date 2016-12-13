@@ -28,6 +28,7 @@ import BuscaPrazos from '../Containers/BuscaPrazos'
 import BuscaQualidade from '../Containers/BuscaQualidade'
 
 import PrazoDetalhado from '../Containers/PrazoDetalhado'
+import QualidadeDetalhada from '../Containers/QualidadeDetalhada'
 
 
 /* **************************
@@ -47,6 +48,7 @@ class NavigationRouter extends Component {
             <Scene key='buscaPrazosProcedimentos' component={BuscaPrazos} title='Procedimentos' />
             <Scene key='prazoDetalhado' component={PrazoDetalhado} title='Prazo Detalhado'  />
             <Scene key='buscaQualidade' component={BuscaQualidade} title='Operadoras' />
+            <Scene key='qualidadeDetalhada' component={QualidadeDetalhada} title='Reputação Operadora'  />
 
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
