@@ -34,6 +34,7 @@ import QualidadeDetalhada from '../Containers/QualidadeDetalhada'
 import FazerReclamacao from '../Containers/FazerReclamacao';
 import ReclamarAns from '../Containers/ReclamarAns';
 import ReclamarReclameAqui from '../Containers/ReclamarReclameAqui';
+import ReclamarOuvidorias from '../Containers/ReclamarOuvidorias';
 
 
 /* **************************
@@ -56,9 +57,10 @@ class NavigationRouter extends Component {
             <Scene key='qualidadeDetalhada' component={QualidadeDetalhada} title='Reputação Operadora'  />
             <Scene key='telaWeb' component={TelaWeb} title='Reclame AQUI'  />
 
-            <Scene key='fazerReclamacao' component={FazerReclamacao} title='Faça sua Reclamação'  />
+            <Scene key='fazerReclamacao' component={FazerReclamacao} title='Envie sua Reclamação'  />
             <Scene key='reclamarAns' component={ReclamarAns} title='Reclamação na ANS'  />
             <Scene key='reclamarReclameAqui' component={ReclamarReclameAqui} title='Reclame AQUI'  />
+            <Scene key='reclamarOuvidorias' component={ReclamarOuvidorias} title='Ouvidorias'  />
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='componentExamples' component={AllComponentsScreen} title='Components' />

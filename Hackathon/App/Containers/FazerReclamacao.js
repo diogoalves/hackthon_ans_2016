@@ -21,18 +21,21 @@ class FazerReclamacao extends React.Component {
   render () {
     return (
       <ScrollView style={styles.container}>
-          <RoundedButton onPress={NavigationActions.reclamarAns}>
-            Encontre o e-mail ouvidoria da sua operadora
+          <RoundedButton onPress={NavigationActions.reclamarOuvidorias}>
+            para Ouvidoria de sua Operadora
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.reclamarAns}>
-            Reclame na ANS
+            para ANS
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.reclamarReclameAqui}>
-            Reclame no Reclama AQUI
+            o Reclama AQUI
           </RoundedButton>
 
+          <RoundedButton onPress={NavigationActions.reclamarReclameAqui}>
+            Envie uma reclamação para todos os Canais
+          </RoundedButton>
       </ScrollView>
     )
   }
