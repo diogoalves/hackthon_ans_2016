@@ -31,6 +31,10 @@ export const INITIAL_STATE = Immutable({
 
 export const performSearch = (state: Object, { searchTerm }: Object) => {
   const results = LIST_DATA.filter((e)=>case_accent_fold(e.nome).contains(case_accent_fold(searchTerm)));
+  if (typeof results !== 'undefined') {
+    const first10 = results.slice(0, Math.min(10, results.length));
+    return state.merge({ searching: true, searchTerm, results: first10 });
+  }
   //const results = filter(startsWith(searchTerm), LIST_DATA)
   return state.merge({ searching: true, searchTerm, results })
 }
@@ -43,9 +47,6 @@ export const reducer = createReducer(INITIAL_STATE, {
   [Types.SEARCH]: performSearch,
   [Types.CANCEL_SEARCH]: cancelSearch
 })
-
-
-
 
 function case_accent_fold (s) {
   if (!s) { return ''; }

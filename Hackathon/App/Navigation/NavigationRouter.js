@@ -23,6 +23,9 @@ import DeviceInfoScreen from '../Containers/DeviceInfoScreen'
 
 import TelaPrincipal from '../Containers/TelaPrincipal'
 import PrazosProcedimentos from '../Containers/PrazosProcedimentos'
+
+import BuscaPrazos from '../Containers/BuscaPrazos'
+
 import BuscaPrazosProcedimentos from '../Containers/BuscaPrazosProcedimentos'
 import PrazoDetalhado from '../Containers/PrazoDetalhado'
 
@@ -41,7 +44,7 @@ class NavigationRouter extends Component {
 
             <Scene initial key='telaPrincipal' component={TelaPrincipal} title='Hackhaton ANS 2016' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='prazosProcedimentos' component={PrazosProcedimentos} title='Prazos de Procedimentos' />
-            <Scene key='buscaPrazosProcedimentos' component={BuscaPrazosProcedimentos} title='Busca Prazos de Procedimentos' navBar={CustomNavBar} />
+            <Scene key='buscaPrazosProcedimentos' component={BuscaPrazos} title='Procedimentos' />
             <Scene key='prazoDetalhado' component={PrazoDetalhado} title='Prazo Detalhado'  />
 
 
