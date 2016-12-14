@@ -64,6 +64,10 @@ class TelaPrincipal extends React.Component {
             Planos de Saúde para seu Hospital
           </RoundedButton>
 
+          <RoundedButton onPress={NavigationActions.tipoEmergencia}>
+          	Emergência
+          </RoundedButton>
+
           <View style={styles.centered}>
             <Text style={styles.subtitle}> ️ </Text>
           </View>

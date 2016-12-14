@@ -66,7 +66,7 @@ class DetalhaPlano extends React.Component {
           </Text>
 
           <RoundedButton onPress={NavigationActions.mapviewExample}>
-            Mostrar Rede Credênciada no Mapa
+            Mostrar Rede Credenciada no Mapa
           </RoundedButton>
 
           <RoundedButton onPress={NavigationActions.pop}>

@@ -43,6 +43,9 @@ import EscolheHospital from '../Containers/EscolheHospital';
 import EscolheLimiteValor from '../Containers/EscolheLimiteValor';
 
 import MeuPlano from '../Containers/MeuPlano';
+import TipoEmergencia from '../Containers/TipoEmergencia';
+import Emergencia from '../Containers/Emergencia';
+
 
 /* **************************
 * Documentation: https://github.com/aksonov/react-native-router-flux
@@ -56,7 +59,7 @@ class NavigationRouter extends Component {
           <Scene key='drawerChildrenWrapper' navigationBarStyle={Styles.navBar} titleStyle={Styles.title} leftButtonIconStyle={Styles.leftButton} rightButtonTextStyle={Styles.rightButton}>
 
 
-            <Scene initial key='telaPrincipal' component={TelaPrincipal} title='Hackhaton ANS 2016' renderLeftButton={NavItems.hamburgerButton} />
+            <Scene initial key='telaPrincipal' component={TelaPrincipal} title='ANS +Simples' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='prazosProcedimentos' component={PrazosProcedimentos} title='Prazos de Procedimentos' />
             <Scene key='buscaPrazosProcedimentos' component={BuscaPrazos} title='Procedimentos' />
             <Scene key='prazoDetalhado' component={PrazoDetalhado} title='Prazo Detalhado'  />
@@ -72,10 +75,12 @@ class NavigationRouter extends Component {
             <Scene key='buscaPlanos' component={BuscaPlanos} title='Planos'  />
             <Scene key='detalhaPlano' component={DetalhaPlano} title='Plano Detalhado'  />
             <Scene key='escolheFaixaEtaria' component={EscolheFaixaEtaria} title='Faixa Etária'  />
-            <Scene key='escolheHospital' component={EscolheHospital} title='Hospitial'  />
+            <Scene key='escolheHospital' component={EscolheHospital} title='Hospital'  />
             <Scene key='escolheLimiteValor' component={EscolheLimiteValor} title='Limite Valor'  />
 
             <Scene key='meuPlano' component={MeuPlano} title='Meu Plano'  />
+            <Scene key='tipoEmergencia' component={TipoEmergencia} title='Tipo da Emergência'  />
+            <Scene key='emergencia' component={Emergencia} title='Emergência'  />
 
 
             <Scene key='presentationScreen' component={PresentationScreen} title='Ignite' renderLeftButton={NavItems.hamburgerButton} />
