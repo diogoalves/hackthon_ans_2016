@@ -5,7 +5,7 @@ Aplicativo mobile desenvolvido pela equipe 6 durante os dois dias do hackathon d
 ANS +Simples.pdf
 
 # Licença 
-CC 4.0
+CC 1.0
 
 # Aplicativo pode ser baixado
 https:/goo.gl/GCguCX
