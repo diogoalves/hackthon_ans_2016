@@ -1,5 +1,5 @@
 # Hackthon ANS 2016
-React-native app developed by ANS+Sipmles team during the two days ANS 2016 hackathon.
+React-native app developed by ANS+Simples team during the two days ANS 2016 hackathon.
 
 # Description
 Who has never had to look for a health plan that can be used in a set of specific hospitals? How do I know which hospital is closest to my location that treats orthopedic or pediatric emergencies? What are the rules of the health plan? Which one has the best reputation?
