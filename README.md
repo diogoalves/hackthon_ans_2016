@@ -4,7 +4,7 @@ React-native app developed by ANS+Simples team during the two days [ANS 2016 hac
 # Description
 Who has never had to look for a health plan that can be used in a set of specific hospitals? How do I know which hospital is closest to my location that treats orthopedic or pediatric emergencies? What are the rules of the health plan? Which one has the best reputation?
 
-The App uses the Brazilian Regulatory Agency for Private Health Insurance and Plans public datasets to answer these and others issues that many of us face when need to make use or subscribe a health plans.
+The App uses the Brazilian Regulatory Agency for Private Health Insurance and Plans public datasets to answer these and others issues that many of us face when need to make use of health plans.
 
 - [Android version download](https:/goo.gl/GCguCX)
 - [Demo video]()
