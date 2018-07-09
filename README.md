@@ -7,8 +7,7 @@ Who has never had to look for a health plan that can be used in a set of specifi
 The App uses the ANS, National Regulatory Agency for Private Health Insurance and Plans, public datasetss to answer these and other issues that many of us face when we need to make use or subscribe a health plan.
 
 - [Android version download](https:/goo.gl/GCguCX)
-- [Demo video]
-- [Instructions to build the development environment](https://github.com/diogoalves/hackthon_ans_2016/blob/master/Hackathon/passo_a_passo_instalar_react-native.txt)
+- [Demo video]()
 
 
 # Descrição (in portuguese)
@@ -24,3 +23,12 @@ Por fim, o aplicativo ainda traz o botão de emergência, o qual permite que, em
 
 # Team
 Anderson Freitas, Cícero Campanharo, [Diogo Alves](https://github.com/diogoalves) and Ricardo Morais
+
+# Install and run
+to run the project you should prepair first your [react-native environment](https://facebook.github.io/react-native/docs/getting-started.html) . After that you could run the command. This app was tested on Android Studio emulator.
+
+```sh
+$ npm install 
+$ npm start
+```
+
