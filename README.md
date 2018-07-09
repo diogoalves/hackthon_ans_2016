@@ -1,4 +1,17 @@
-# Descrição
+# Hackthon ANS 2016
+React-native app developed by ANS+Sipmles team during the two days ANS 2016 hackathon.
+
+# Description
+Who has never had to look for a health plan that can be used in a set of specific hospitals? How do I know which hospital is closest to my location that treats orthopedic or pediatric emergencies? What are the rules of the health plan? Which one has the best reputation?
+
+The App uses the ANS, National Regulatory Agency for Private Health Insurance and Plans, public datasetss to answer these and other issues that many of us face when we need to make use or subscribe a health plan.
+
+- [Android version download](https:/goo.gl/GCguCX)
+- [Demo video]
+- [Instructions to build the development environment](https://github.com/diogoalves/hackthon_ans_2016/blob/master/Hackathon/passo_a_passo_instalar_react-native.txt)
+
+
+# Descrição (in portuguese)
 Quem nunca se deparou com a necessidade de buscar um plano de saúde que atendesse a um conjunto de hospitais específicos mas nunca soube como, onde ou quem procurar? Como saber qual o hospital mais próximo da minha localidade que atende a emergências ortopédicas ou pediátricas? Quais procedimentos são cobertos pelo meu plano de saúde e qual o prazo máximo que a operadora do plano possui para autorizar determinado tipo de procedimento?
 
 O aplicativo ANS +Simples busca responder a essas e outras questões com as quais muitos de nós nos deparamos quando precisamos fazer uso do nossos planos ou quando queremos adquirir ou mudar de plano de saúde. Por exemplo, o aplicativo traz uma funcionalidade que permite que o usuário consulte de dentro do programa dados do seu plano a partir do site da própria ANS. Essa funcionalidade, denominada Meu Plano, permite a consulta dos dados da carteira do usuário em qualquer tempo, independentemente da operadora à qual o plano está vinculado, possibilitando que, em caso de perda, não recebimento ou extravio da carteira, o usuário possa recuperar todos os dados necessários para realizar procedimentos na rede conveniada.
@@ -9,26 +22,5 @@ Um diferencial do aplicativo é a possibilidade de, uma vez informado o nome de 
 
 Por fim, o aplicativo ainda traz o botão de emergência, o qual permite que, em dois cliques, o programa encontre os hospitais mais próximos do local onde se encontra o usuário que atendam ao tipo de emergência ocorrida (atualmente os tipos são Infantil, Adulto e Ortopédico) e os mostre no Google Maps para que o consumidor se desloque e seja atendido no menor tempo possível.
 
-A apresentação, o projeto e o link para download do aplicativo Android estão disponíveis em https://github.com/diogoalves/hackthon_ans_2016
-
-
-# Aviso Legal:
-
-Em virtude de o desenvolvimento do aplicativo ter se dado em apenas dois dias (durante o período oficial do Hackathon) e por não dispormos de infraestrutura dedicada para prover os serviços a serem consumidos pelos smartphones e tablets a qualquer tempo (i.e. após a finalização do evento), um subconjunto dos dados disponibilizados pela ANS foi embutido no próprio app para uso local. Portanto, o estado atual desta aplicação pode ser entendido apenas como prova de conceito e de viabilidade das funcionalidades descritas, não devendo ser compreendido (no presente momento) como uma aplicação pronta para uso em produção pelo consumidor final. 
-
-# Hackthon ANS 2016
-Aplicativo mobile desenvolvido pela equipe 6 durante os dois dias do hackathon da ANS 2016.
-
-
-
-# Apresentação
-ANS +Simples.pdf
-
-# Licença 
-CC 1.0
-
-# Aplicativo pode ser baixado
-https:/goo.gl/GCguCX
-
-# Ambiente de desenvolvimento
-ver Hackathon/passo_a_passo_instalar_react-native.txt
+# Team
+Anderson Freitas, Cícero Campanharo, [Diogo Alves](https://github.com/diogoalves) and Ricardo Morais
