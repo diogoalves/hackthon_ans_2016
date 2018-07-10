@@ -22,7 +22,7 @@ Um diferencial do aplicativo é a possibilidade de, uma vez informado o nome de 
 Por fim, o aplicativo ainda traz o botão de emergência, o qual permite que, em dois cliques, o programa encontre os hospitais mais próximos do local onde se encontra o usuário que atendam ao tipo de emergência ocorrida (atualmente os tipos são Infantil, Adulto e Ortopédico) e os mostre no Google Maps para que o consumidor se desloque e seja atendido no menor tempo possível.
 
 ### Team
-Anderson Freitas, Cícero Campanharo, [Diogo Alves](https://github.com/diogoalves) and Ricardo Morais
+[Anderson Freitas](https://github.com/alsfreitas), Cícero Campanharo, [Diogo Alves](https://github.com/diogoalves) and Ricardo Morais
 
 ### Install and run
 to run the project you should prepair first your [react-native environment](https://facebook.github.io/react-native/docs/getting-started.html) . After that you could run the command. This app was tested on Android Studio emulator.
