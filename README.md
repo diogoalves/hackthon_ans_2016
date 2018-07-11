@@ -6,8 +6,7 @@ Who has never had to look for a health plan that can be used in a set of specifi
 
 The App uses the Brazilian Regulatory Agency for Private Health Insurance and Plans public datasets to answer these and others issues that many of us face when need to make use of health plans.
 
-- [Android version download](https:/goo.gl/GCguCX)
-- [Demo video]()
+- [Demo video](https://youtu.be/T2NnHdhcM9A)
 
 
 ### Descrição (in portuguese)
@@ -25,10 +24,10 @@ Por fim, o aplicativo ainda traz o botão de emergência, o qual permite que, em
 [Anderson Freitas](https://github.com/alsfreitas), Cícero Campanharo, [Diogo Alves](https://github.com/diogoalves) and Ricardo Morais
 
 ### Install and run
-to run the project you should prepair first your [react-native environment](https://facebook.github.io/react-native/docs/getting-started.html) . After that you could run the command. This app was tested on Android Studio emulator.
+to run the project you should prepair first your [react-native environment](https://facebook.github.io/react-native/docs/getting-started.html) . After that you could run the command. This app was tested on Android Studio and IOS emulators.
 
 ```sh
 $ npm install 
-$ npm start
+$ react-native run-android  or npm run-ios
 ```
 
