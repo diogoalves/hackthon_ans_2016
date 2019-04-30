@@ -1,4 +1,4 @@
-# Hackthon ANS 2016
+# Hackathon ANS 2016
 React-native app developed by ANS+Simples team during the two days [ANS 2016 hackathon](http://www.ans.gov.br/aans/noticias-ans/sobre-a-ans/3666-ans-anuncia-vencedores-do-hackathon-da-saude-suplementar) [screenshot](https://raw.githubusercontent.com/diogoalves/hackthon_ans_2016/master/captura.png).
 
 ### Description
