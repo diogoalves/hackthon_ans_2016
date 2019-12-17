@@ -6,7 +6,7 @@ Who has never had to look for a health plan that can be used in a set of specifi
 
 The App uses the Brazilian Regulatory Agency for Private Health Insurance and Plans public datasets to answer these and others issues that many of us face when need to make use of health plans.
 
-### Demo
+### Demo (click to play)
 [![Demo](https://img.youtube.com/vi/T2NnHdhcM9A/0.jpg)](https://youtu.be/T2NnHdhcM9A)
 
 
